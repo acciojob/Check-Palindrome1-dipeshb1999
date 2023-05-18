@@ -1,20 +1,13 @@
 // complete the given function
+function isPalindrome() {
+  var input = document.getElementById('input').value.toLowerCase().replace(/[^a-z0-9]/g, '');
+  var reversed = input.split('').reverse().join('');
 
-// function palindrome(str){
-
-// }
-// module.exports = palindrome
-function isPalindrome(s) {
-  // Remove non-alphanumeric characters and convert to lowercase
-  const cleanString = s.replace(/[^A-Za-z0-9]/g, '').toLowerCase();
-
-  // Compare characters from both ends
-  for (let i = 0, j = cleanString.length - 1; i < j; i++, j--) {
-    if (cleanString[i] !== cleanString[j]) {
-      return false;
-    }
+  if (input === reversed) {
+    document.getElementById('result').textContent = 'It is a palindrome!';
+  } else {
+    document.getElementById('result').textContent = 'It is not a palindrome.';
   }
-
-  return true;
 }
+
 
