@@ -1,23 +1,21 @@
 <!DOCTYPE html>
-
 <html>
+  <head>
+    <title>Palindrome Checker</title>
+    <style>
+      #result {
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <form onsubmit="checkPalindrome(event)">
+      <label for="inputString">Enter a string:</label>
+      <input type="text" id="inputString" />
+      <button type="submit">Check Palindrome</button>
+    </form>
+    <div id="result"></div>
 
-<head>
-	<link rel="stylesheet" href="styles.css">
-</head>
-
-<body>
-	<!-- the entire body must be written by student -->
-	  <h1>Palindrome Checker</h1>
-  <div class="container">
-    <label for="input">Enter a word or sentence:</label>
-    <input type="text" id="input" placeholder="Enter text...">
-    <button id="checkBtn">Check</button>
-    <p id="result"></p>
-  </div>
-    <script type="text/javascript" src="./script.js">
-   </script>
-
-</body>
-
+    <script src="script.js"></script>
+  </body>
 </html>
